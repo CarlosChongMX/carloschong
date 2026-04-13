@@ -166,6 +166,8 @@ h1
 #aBoton
 {
   font-family: "Futura LT Extra Bold";
+  font-size: 110%;
+  line-height: 1.91;
 }
 #ulNavegacion a:hover, #liMenu:hover #aBoton, #ulContenido > li > a.activo, #ulContenido > li > a:hover
 {
