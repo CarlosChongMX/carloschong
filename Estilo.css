@@ -110,6 +110,7 @@ body
 {
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
   background-color: #1c1c1c;
 }
 #divContenedor
@@ -120,6 +121,7 @@ body
   background-color: #00304e;
   color: #e3e4e5;
   font-family: "Calibri";
+  font-size: 18px;
   line-height: 2;
 }
 #divTitulo
@@ -141,10 +143,6 @@ h1
   font-family: "Cambria";
   line-height: 1.5;
 }
-#divEncabezado
-{
-  position: relative;
-}
 #pGMTMenosSeis
 {
   font-size: 90%;
@@ -154,59 +152,32 @@ h1
 {
   list-style-type: none;
   padding: 0;
-  overflow: hidden;
   border-width: 0.1em;
   border-style: solid none;
   border-color: #e3e4e5;
 }
-#ulNavegacion > li:first-child
-{
-  float: left;
-}
-#ulNavegacion > li:last-child
-{
-  float: right;
-}
-#ulNavegacion > li > a
-{
-  display: inline-block;
-  color: #e3e4e5;
-  text-align: center;
-  padding: 0.5em;
-  text-decoration-line: none;
-}
-#ulNavegacion a:hover, #liMenu:hover #aBoton
-{
-  background-color: #e3e4e5;
-  color: #00304e;
-}
-#liMenu
-{
-  display: inline-block;
-}
-#ulContenido
-{
-  display: none;
-  position: absolute;
-  right: 0;
-  list-style-type: none;
-  padding: 0;
-  background-color: #1c1c1c;
-  border: 0.1em solid #e3e4e5;
-  z-index: 1;
-}
-#ulContenido > li > a
+#aBoton, #ulContenido > li > a
 {
   display: block;
   padding: 0.5em;
   color: #e3e4e5;
-  text-align: left;
   text-decoration-line: none;
 }
-#ulContenido > li > a.activo, #ulContenido > li > a:hover
+#aBoton
+{
+  font-family: "Futura LT Extra Bold";
+}
+#ulNavegacion a:hover, #liMenu:hover #aBoton, #ulContenido > li > a.activo, #ulContenido > li > a:hover
 {
   background-color: #e3e4e5;
   color: #00304e;
+}
+#ulContenido
+{
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  background-color: #1c1c1c;
 }
 #ulContenido > li > a.activo
 {
@@ -215,10 +186,6 @@ h1
 #liMenu:hover > #ulContenido
 {
   display: block;
-}
-#aLogo
-{
-  font-family: "Futura LT Extra Bold";
 }
 #pAtribucion
 {

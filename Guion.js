@@ -77,7 +77,7 @@ function iniciarGMTMenosSeis()
   if (segundo < 10) segundo = "0" + segundo;
   const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
   const diasDeLaSemana = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
-  document.getElementById("pGMTMenosSeis").innerHTML = "<span style='font-weight: bold;'>Tiempo del Centro de la Hora de México:</span> En la Cd. de México, ent. de la Cd. Mx., México, es " + diasDeLaSemana[diaDeLaSemana] + " " + diaDelMes + " de " + meses[mes] + " de " + ano + ", " + hora + ":" + minuto + ":" + segundo + " " + antesDespuesDelMediodia + " GMT−6 (90°W).";
+  document.getElementById("pGMTMenosSeis").innerHTML = "<b>Tiempo del Centro de la Hora de México:</b> En la Cd. de México, ent. de la Cd. Mx., México, es " + diasDeLaSemana[diaDeLaSemana] + " " + diaDelMes + " de " + meses[mes] + " de " + ano + ", " + hora + ":" + minuto + ":" + segundo + " " + antesDespuesDelMediodia + " GMT−6 (90°W).";
   window.setTimeout(iniciarGMTMenosSeis, 1000);
 }
 //]]>
