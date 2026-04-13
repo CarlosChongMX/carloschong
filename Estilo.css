@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@font-face
+{
+  font-family: "Futura LT Extra Bold";
+  src: url(./Futura_LT_Extra_Bold.ttf);
+}
+@font-face
+{
+  font-family: "Cambria";
+  src: url(./Cambria_Regular.ttf);
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face
+{
+  font-family: "Cambria";
+  src: url(./Cambria_Bold.ttf);
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face
+{
+  font-family: "Cambria";
+  src: url(./Cambria_Italic.ttf);
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face
+{
+  font-family: "Cambria";
+  src: url(./Cambria_Bold_Italic.ttf);
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face
+{
+  font-family: "Calibri";
+  src: url(./Calibri_Regular.ttf);
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face
+{
+  font-family: "Calibri";
+  src: url(./Calibri_Bold.ttf);
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face
+{
+  font-family: "Calibri";
+  src: url(./Calibri_Italic.ttf);
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face
+{
+  font-family: "Calibri";
+  src: url(./Calibri_Bold_Italic.ttf);
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face
+{
+  font-family: "Consolas";
+  src: url(./Consolas_Regular.ttf);
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face
+{
+  font-family: "Consolas";
+  src: url(./Consolas_Bold.ttf);
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face
+{
+  font-family: "Consolas";
+  src: url(./Consolas_Italic.ttf);
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face
+{
+  font-family: "Consolas";
+  src: url(./Consolas_Bold_Italic.ttf);
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: bold;
+}
+*
+{
+  box-sizing: border-box;
+  hyphenate-character: "-";
+  hyphens: auto;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+}
+#divContenedor
+{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1em 1em 4em;
+  background-color: #00304e;
+  color: #e3e4e5;
+  font-family: "Calibri";
+  font-size: 20pt;
+  line-height: 2;
+}
+#divTitulo
+{
+  margin: 1em 0;
+  padding: 1em;
+  border: 0.1em dashed;
+  font-size: 190%;
+  font-weight: bold;
+  line-height: 1.53;
+  text-align: center;
+}
+#divTitulo > p
+{
+  margin: 0;
+}
+h1
+{
+  font-family: "Cambria";
+  line-height: 1.5;
+}
+#divEncabezado
+{
+  position: relative;
+}
+#pGMTMenosSeis
+{
+  font-size: 90%;
+  line-height: 2.11;
+}
+#ulNavegacion
+{
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid none;
+  border-color: #e3e4e5;
+}
+#ulNavegacion > li:first-child
+{
+  float: left;
+}
+#ulNavegacion > li:last-child
+{
+  float: right;
+}
+#ulNavegacion > li > a
+{
+  display: inline-block;
+  color: #e3e4e5;
+  text-align: center;
+  padding: 0.5em;
+  text-decoration-line: none;
+}
+#ulNavegacion a:hover, #liMenu:hover #aBoton
+{
+  background-color: #e3e4e5;
+  color: #00304e;
+}
+#liMenu
+{
+  display: inline-block;
+}
+#ulContenido
+{
+  display: none;
+  position: absolute;
+  right: 0;
+  list-style-type: none;
+  padding: 0;
+  background-color: #1c1c1c;
+  border: 1px solid #e3e4e5;
+  z-index: 1;
+}
+#ulContenido > li > a
+{
+  display: block;
+  padding: 0.5em;
+  color: #e3e4e5;
+  text-align: left;
+  text-decoration-line: none;
+}
+#ulContenido > li > a.activo, #ulContenido > li > a:hover
+{
+  background-color: #e3e4e5;
+  color: #00304e;
+}
+#liMenu:hover > #ulContenido
+{
+  display: block;
+}
+#aLogo
+{
+  font-family: "Futura LT Extra Bold";
+}
+#pAtribucion
+{
+  font-size: 90%;
+  line-height: 2.11;
+}
+a
+{
+  color: #fabd00;
+  text-decoration-style: dotted;
+  text-underline-position: under;
+}
+hr
+{
+  width: 50%;
+  height: 1em;
+  margin: 1em 0;
+  background-color: transparent;
+  text-align: left;
+  border: 0.1em solid #e3e4e5;
+  border-radius: 0 0.5em 0.5em 0;
+}
+.tabla
+{
+  padding-bottom: 1em;
+  overflow-x: auto;
+}
+table
+{
+  margin: auto;
+  border-collapse: collapse;
+}
+table, th, td
+{
+  border: 1px solid;
+}
+th, td, caption
+{
+  padding: 0.5em;
+  font-family: "Calibri";
+  font-size: 20pt;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+}
+caption
+{
+  margin: 0 0 0.5em;
+}
+.fuenteMonoespaciada
+{
+  font-family: "Consolas";
+}
