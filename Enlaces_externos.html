@@ -13,28 +13,29 @@
       <p class="fuenteMonoespaciada">// Inicio de la página</p>
       <div id="divEncabezado">
         <p id="pGMTMenosSeis"></p>
-        <ul id="ulNavegacion">
-          <li id="liMenu">
-            <a id="aBoton" href="./index.html" title="Ir a la Página principal">Carlos Chong</a>
-            <ul id="ulContenido">
-              <li><a href="./index.html">Página principal</a></li>
-              <li><a class="activo" href="./Enlaces_externos.html">Enlaces externos</a></li>
-              <li><a href="./Acerca_de_mí.html">Acerca de mí</a></li>
-            </ul>
-          </li>
-        </ul>
+        <p id="pNavegacion">
+          <a id="aLogo" href="./index.html" title="Ir a la Página principal">Carlos Chong</a>
+          <br />
+          <select id="selectMenu" onchange="window.location.href = this.value">
+            <option disabled="disabled" selected="selected">Ir a…</option>
+            <option value="./index.html">Página principal</option>
+            <option value="./Enlaces_externos.html">Enlaces externos</option>
+            <option value="./Acerca_de_mí.html">Acerca de mí</option>
+          </select>
+        </p>
       </div>
       <div id="divTitulo"><p>Enlaces externos</p></div>
       <h1>Contenido</h1>
       <ol>
         <li><a href="#seccion1">Canales de TV abierta en la Cd. Mx., ent. de la Cd. Mx., México</a></li>
         <li><a href="#seccion2">Destinos de complejos recreativos y parques de atracciones</a></li>
+        <li><a href="#seccion3">Concejos regionales de La Comisión de Baile Irlandés</a></li>
       </ol>
       <hr />
       <h1 id="seccion1">Canales de TV abierta en la Cd. Mx., ent. de la Cd. Mx., México</h1>
       <div class="tabla">
         <table>
-          <caption>Tabla 1 de 2: Canales de TV abierta en Ciudad de México, Cd. Mx., México</caption>
+          <caption>Tabla 1 de 3: Canales de TV abierta en Ciudad de México, Cd. Mx., México</caption>
           <tr>
             <th>Distintivo</th>
             <th>Canal virtual</th>
@@ -233,290 +234,438 @@
       <h1 id="seccion2">Destinos de complejos recreativos y parques de atracciones</h1>
       <div class="tabla">
         <table>
-          <caption>Tabla 2 de 2: Destinos de complejos y parques de entretenimiento</caption>
+          <caption>Tabla 2 de 3: Destinos de complejos y parques de entretenimiento</caption>
           <tr>
             <th>Empresa</th>
             <th>País</th>
             <th>Entidad</th>
-            <th>Destino</th>
+            <th colspan="2">Destino</th>
           </tr>
           <tr>
-            <td lang="en-US" rowspan="14">Disney</td>
+            <td lang="en-US" rowspan="32">Disney</td>
             <td rowspan="2">China</td>
             <td>Municipio de Shanghái</td>
-            <td lang="en-US">Shanghai Disney Resort</td>
+            <td lang="en-US" colspan="2"><a href="https://www.shanghaidisneyresort.com/">Shanghai Disney Resort</a></td>
           </tr>
           <tr>
             <td>Región de Hong Kong</td>
-            <td lang="en-US">Hong Kong Disneyland Resort</td>
-          </tr>
-          <tr>
-            <td lang="en-US" rowspan="8">Disney Cruise Line</td>
-            <td lang="en-US" colspan="2">Disney Adventure</td>
-          </tr>
-          <tr>
-            <td lang="en-US" colspan="2">Disney Destiny</td>
-          </tr>
-          <tr>
-            <td lang="en-US" colspan="2">Disney Dream</td>
-          </tr>
-          <tr>
-            <td lang="en-US" colspan="2">Disney Fantasy</td>
-          </tr>
-          <tr>
-            <td lang="en-US" colspan="2">Disney Magic</td>
-          </tr>
-          <tr>
-            <td lang="en-US" colspan="2">Disney Treasure</td>
-          </tr>
-          <tr>
-            <td lang="en-US" colspan="2">Disney Wish</td>
-          </tr>
-          <tr>
-            <td lang="en-US" colspan="2">Disney Wonder</td>
+            <td lang="en-US" colspan="2"><a href="https://www.hongkongdisneyland.com/">Hong Kong Disneyland Resort</a></td>
           </tr>
           <tr>
             <td rowspan="2">Estados Unidos</td>
             <td>Estado de California</td>
-            <td lang="en-US"><a href="https://disneyland.disney.go.com/">Disneyland Resort</a></td>
+            <td lang="en-US" colspan="2"><a href="https://disneyland.disney.go.com/">Disneyland Resort</a></td>
           </tr>
           <tr>
             <td>Estado de Florida</td>
-            <td lang="en-US"><a href="https://disneyworld.disney.go.com/">Walt Disney World Resort</a></td>
+            <td lang="en-US" colspan="2"><a href="https://disneyworld.disney.go.com/">Walt Disney World Resort</a></td>
           </tr>
           <tr>
             <td>Francia</td>
             <td>Región de la Isla de Francia</td>
-            <td lang="en-US">Disneyland Paris</td>
+            <td lang="en-US" colspan="2"><a href="https://www.disneylandparis.com/">Disneyland Paris</a></td>
           </tr>
           <tr>
             <td>Japón</td>
             <td>Prefectura de Chiba</td>
-            <td lang="en-US">Tokyo Disney Resort</td>
+            <td lang="en-US" colspan="2"><a href="https://www.tokyodisneyresort.jp/en">Tokyo Disney Resort</a></td>
+          </tr>
+          <tr>
+            <td rowspan="26">Varios</td>
+            <td lang="en-US" rowspan="26">Disney Cruise Line</td>
+            <td lang="en-US">Disney Adventure</td>
+            <td>Singapur</td>
+          </tr>
+          <tr>
+            <td lang="en-US" colspan="2">Disney Believe</td>
+          </tr>
+          <tr>
+            <td lang="en-US" rowspan="3">Disney Destiny</td>
+            <td>Bahamas</td>
+          </tr>
+          <tr>
+            <td>Caribe occidental</td>
+          </tr>
+          <tr>
+            <td>Destinos isleños</td>
+          </tr>
+          <tr>
+            <td lang="en-US" rowspan="3">Disney Dream</td>
+            <td lang="en-US">Disney Lookout Cay <span lang="es-MX">en</span> Lighthouse Point</td>
+          </tr>
+          <tr>
+            <td>Europa</td>
+          </tr>
+          <tr>
+            <td>El Caribe</td>
+          </tr>
+          <tr>
+            <td lang="en-US" rowspan="4">Disney Fantasy</td>
+            <td>Caribe</td>
+          </tr>
+          <tr>
+            <td>Destinos isleños de Disney</td>
+          </tr>
+          <tr>
+            <td>Bahamas</td>
+          </tr>
+          <tr>
+            <td lang="en-US">Pixar Days at Sea</td>
+          </tr>
+          <tr>
+            <td lang="en-US" rowspan="5">Disney Magic</td>
+            <td>Bahamas</td>
+          </tr>
+          <tr>
+            <td>Caribe Occidental</td>
+          </tr>
+          <tr>
+            <td>Alaska</td>
+          </tr>
+          <tr>
+            <td>Galveston, Texas</td>
+          </tr>
+          <tr>
+            <td lang="en-US">Marvel Days at Sea</td>
+          </tr>
+          <tr>
+            <td lang="en-US" rowspan="3">Disney Treasure</td>
+            <td>Caribe Oriental</td>
+          </tr>
+          <tr>
+            <td>Caribe Occidental</td>
+          </tr>
+          <tr>
+            <td lang="en-US">Castaway Cay</td>
+          </tr>
+          <tr>
+            <td lang="en-US" rowspan="3">Disney Wish</td>
+            <td>Destinos isleños de Disney</td>
+          </tr>
+          <tr>
+            <td>Europa</td>
+          </tr>
+          <tr>
+            <td>Bahamas</td>
+          </tr>
+          <tr>
+            <td lang="en-US" rowspan="3">Disney Wonder</td>
+            <td>Alaska</td>
+          </tr>
+          <tr>
+            <td>Baja</td>
+          </tr>
+          <tr>
+            <td>San Diego, California</td>
           </tr>
           <tr>
             <td lang="en-US" rowspan="12">SeaWorld</td>
             <td rowspan="12">Estados Unidos</td>
             <td rowspan="2">Estado de California</td>
-            <td lang="en-US">SeaWorld San Diego</td>
+            <td lang="en-US" colspan="2"><a href="https://seaworld.com/san-diego">SeaWorld San Diego</a></td>
           </tr>
           <tr>
-            <td lang="en-US">Sesame Place San Diego</td>
+            <td lang="en-US" colspan="2">Sesame Place San Diego</td>
           </tr>
           <tr>
             <td rowspan="5">Estado de Florida</td>
-            <td lang="en-US">Adventure Island</td>
+            <td lang="en-US" colspan="2">Adventure Island</td>
           </tr>
           <tr>
-            <td lang="en-US">Aquatica Orlando</td>
+            <td lang="en-US" colspan="2">Aquatica Orlando</td>
           </tr>
           <tr>
-            <td lang="en-US">Busch Gardens Tampa Bay</td>
+            <td lang="en-US" colspan="2"><a href="https://buschgardens.com/tampa">Busch Gardens Tampa Bay</a></td>
           </tr>
           <tr>
-            <td lang="en-US">Discovery Cove</td>
+            <td lang="en-US" colspan="2">Discovery Cove</td>
           </tr>
           <tr>
-            <td lang="en-US">SeaWorld Orlando</td>
+            <td lang="en-US" colspan="2"><a href="https://seaworld.com/orlando">SeaWorld Orlando</a></td>
           </tr>
           <tr>
             <td>Estado de Pensilvania</td>
-            <td lang="en-US">Sesame Place Philadelphia</td>
+            <td lang="en-US" colspan="2">Sesame Place Philadelphia</td>
           </tr>
           <tr>
             <td rowspan="2">Estado de Texas</td>
-            <td lang="en-US">Aquatica San Antonio</td>
+            <td lang="en-US" colspan="2">Aquatica San Antonio</td>
           </tr>
           <tr>
-            <td lang="en-US">SeaWorld San Antonio</td>
+            <td lang="en-US" colspan="2"><a href="https://seaworld.com/san-antonio">SeaWorld San Antonio</a></td>
           </tr>
           <tr>
             <td rowspan="2">Estado de Virginia</td>
-            <td lang="en-US">Busch Gardens Williamsburg</td>
+            <td lang="en-US" colspan="2">Busch Gardens Williamsburg</td>
           </tr>
           <tr>
-            <td lang="en-US">Water Country USA</td>
+            <td lang="en-US" colspan="2">Water Country USA</td>
           </tr>
           <tr>
             <td lang="en-US" rowspan="44">Six Flags</td>
             <td>Canadá</td>
             <td>Provincia de Quebec</td>
-            <td lang="fr-CA">La Ronde</td>
+            <td lang="fr-CA" colspan="2">La Ronde</td>
           </tr>
           <tr>
             <td rowspan="41">Estados Unidos</td>
             <td>Estado de Arizona</td>
-            <td lang="en-US">Hurricane Harbor Phoenix</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor Phoenix</td>
           </tr>
           <tr>
             <td rowspan="7">Estado de California</td>
-            <td lang="en-US">California's Great America</td>
+            <td lang="en-US" colspan="2">California's Great America</td>
           </tr>
           <tr>
-            <td lang="en-US">Hurricane Harbor Concord</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor Concord</td>
           </tr>
           <tr>
-            <td lang="en-US">Hurricane Harbor Los Angeles</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor Los Angeles</td>
           </tr>
           <tr>
-            <td lang="en-US">Knott's Berry Farm</td>
+            <td lang="en-US" colspan="2"><a href="https://www.knotts.com/">Knott's Berry Farm</a></td>
           </tr>
           <tr>
-            <td lang="en-US">Knott's Soak City</td>
+            <td lang="en-US" colspan="2">Knott's Soak City</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Discovery Kingdom</td>
+            <td lang="en-US" colspan="2">Six Flags Discovery Kingdom</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Magic Mountain</td>
+            <td lang="en-US" colspan="2">Six Flags Magic Mountain</td>
           </tr>
           <tr>
             <td>Estado de Carolina del Norte</td>
-            <td lang="en-US">Carowinds</td>
+            <td lang="en-US" colspan="2">Carowinds</td>
           </tr>
           <tr>
             <td rowspan="2">Estado de Georgia</td>
-            <td lang="en-US">Six Flags Over Georgia</td>
+            <td lang="en-US" colspan="2">Six Flags Over Georgia</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags White Water</td>
+            <td lang="en-US" colspan="2">Six Flags White Water</td>
           </tr>
           <tr>
             <td rowspan="3">Estado de Illinois</td>
-            <td lang="en-US">Hurricane Harbor Chicago</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor Chicago</td>
           </tr>
           <tr>
-            <td lang="en-US">Hurricane Harbor Rockford</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor Rockford</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Great America</td>
+            <td lang="en-US" colspan="2">Six Flags Great America</td>
           </tr>
           <tr>
             <td>Estado de Maryland</td>
-            <td lang="en-US">Six Flags America</td>
+            <td lang="en-US" colspan="2">Six Flags America</td>
           </tr>
           <tr>
             <td>Estado de Massachusetts</td>
-            <td lang="en-US">Six Flags New England</td>
+            <td lang="en-US" colspan="2">Six Flags New England</td>
           </tr>
           <tr>
             <td>Estado de Míchigan</td>
-            <td lang="en-US">Michigan's Adventure</td>
+            <td lang="en-US" colspan="2">Michigan's Adventure</td>
           </tr>
           <tr>
             <td>Estado de Minnesota</td>
-            <td lang="en-US">Valleyfair</td>
+            <td lang="en-US" colspan="2">Valleyfair</td>
           </tr>
           <tr>
             <td rowspan="2">Estado de Misuri</td>
-            <td lang="en-US">Six Flags St. Louis</td>
+            <td lang="en-US" colspan="2">Six Flags St. Louis</td>
           </tr>
           <tr>
-            <td lang="en-US">Worlds of Fun</td>
+            <td lang="en-US" colspan="2">Worlds of Fun</td>
           </tr>
           <tr>
             <td rowspan="4">Estado de Nueva Jersey</td>
-            <td lang="en-US">Hurricane Harbor New Jersey</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor New Jersey</td>
           </tr>
           <tr>
-            <td lang="en-US">Savannah Sunset Resort & Spa</td>
+            <td lang="en-US" colspan="2">Savannah Sunset Resort & Spa</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Great Adventure</td>
+            <td lang="en-US" colspan="2">Six Flags Great Adventure</td>
           </tr>
           <tr>
-            <td lang="en-US">Wild Safari Adventure</td>
+            <td lang="en-US" colspan="2">Wild Safari Adventure</td>
           </tr>
           <tr>
             <td rowspan="4">Estado de Nueva York</td>
-            <td lang="en-US">Darien Lake Lodging</td>
+            <td lang="en-US" colspan="2">Darien Lake Lodging</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Darien Lake</td>
+            <td lang="en-US" colspan="2">Six Flags Darien Lake</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Great Escape</td>
+            <td lang="en-US" colspan="2">Six Flags Great Escape</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Great Escape Lodge & Indoor Waterpark</td>
+            <td lang="en-US" colspan="2">Six Flags Great Escape Lodge & Indoor Waterpark</td>
           </tr>
           <tr>
             <td rowspan="3">Estado de Ohio</td>
-            <td lang="en-US">Cedar Point</td>
+            <td lang="en-US" colspan="2">Cedar Point</td>
           </tr>
           <tr>
-            <td lang="en-US">Cedar Point Shores</td>
+            <td lang="en-US" colspan="2">Cedar Point Shores</td>
           </tr>
           <tr>
-            <td lang="en-US">Kings Island</td>
+            <td lang="en-US" colspan="2">Kings Island</td>
           </tr>
           <tr>
             <td rowspan="2">Estado de Oklahoma</td>
-            <td lang="en-US">Frontier City</td>
+            <td lang="en-US" colspan="2">Frontier City</td>
           </tr>
           <tr>
-            <td lang="en-US">Hurricane Harbor OKC</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor OKC</td>
           </tr>
           <tr>
             <td>Estado de Pensilvania</td>
-            <td lang="en-US">Dorney Park</td>
+            <td lang="en-US" colspan="2">Dorney Park</td>
           </tr>
           <tr>
             <td rowspan="6">Estado de Texas</td>
-            <td lang="en-US">Hurricane Harbor Arlington</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor Arlington</td>
           </tr>
           <tr>
-            <td lang="en-US">Hurricane Harbor Splashtown</td>
+            <td lang="en-US" colspan="2">Hurricane Harbor Splashtown</td>
           </tr>
           <tr>
-            <td lang="en-US">Schlitterbahn Galveston</td>
+            <td lang="en-US" colspan="2">Schlitterbahn Galveston</td>
           </tr>
           <tr>
-            <td lang="en-US">Schlitterbahn New Braunfels</td>
+            <td lang="en-US" colspan="2">Schlitterbahn New Braunfels</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Fiesta Texas</td>
+            <td lang="en-US" colspan="2">Six Flags Fiesta Texas</td>
           </tr>
           <tr>
-            <td lang="en-US">Six Flags Over Texas</td>
+            <td lang="en-US" colspan="2">Six Flags Over Texas</td>
           </tr>
           <tr>
             <td>Estado de Virginia</td>
-            <td lang="en-US">Kings Dominion</td>
+            <td lang="en-US" colspan="2">Kings Dominion</td>
           </tr>
           <tr>
             <td rowspan="2">México</td>
             <td>Entidad de la Ciudad de México</td>
-            <td>Six Flags México</td>
+            <td colspan="2"><a href="https://www.sixflags.com.mx/mexico">Six Flags México</a></td>
           </tr>
           <tr>
             <td>Estado de Morelos</td>
-            <td>Hurricane Harbor Oaxtepec</td>
+            <td colspan="2">Hurricane Harbor Oaxtepec</td>
           </tr>
           <tr>
             <td lang="en-US" rowspan="5">Universal</td>
             <td>China</td>
             <td>Municipio de Pekín</td>
-            <td lang="en-US">Universal Beijing Resort</td>
+            <td lang="en-US" colspan="2"><a href="https://www.universalbeijingresort.com/en">Universal Beijing Resort</a></td>
           </tr>
           <tr>
             <td rowspan="2">Estados Unidos</td>
             <td>Estado de California</td>
-            <td lang="en-US">Universal Studios Hollywood</td>
+            <td lang="en-US" colspan="2"><a href="https://www.universalstudioshollywood.com/web/en/us">Universal Studios Hollywood</a></td>
           </tr>
           <tr>
             <td>Estado de Florida</td>
-            <td lang="en-US">Universal Orlando Resort</td>
+            <td lang="en-US" colspan="2"><a href="https://www.universalorlando.com/web/en/us">Universal Orlando Resort</a></td>
           </tr>
           <tr>
             <td>Japón</td>
             <td>Prefectura de Osaka</td>
-            <td lang="en-US">Universal Studios Japan</td>
+            <td lang="en-US" colspan="2"><a href="https://www.usj.co.jp/web/en/us">Universal Studios Japan</a></td>
           </tr>
           <tr>
             <td>Singapur</td>
             <td>Consejo del Sudoeste</td>
-            <td lang="en-US">Universal Studios Singapore</td>
+            <td lang="en-US" colspan="2"><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore">Universal Studios Singapore</a></td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <h1 id="seccion3">Concejos regionales de La Comisión de Baile Irlandés</h1>
+      <div class="tabla">
+        <table>
+          <caption>Tabla 3 de 3: Concejos regionales de <span lang="ga-IE">An Coimisiún</span></caption>
+          <tr>
+            <th>Organismo troncal</th>
+            <th>Lugar</th>
+            <th colspan="2">Dependencia regional</th>
+          </tr>
+          <tr>
+            <td rowspan="21"><a href="https://www.clrg.ie/"><span lang="ga-IE">An Coimisiún Le Rincí Gaelacha</span> — <span lang="en-GB">The Irish Dancing Commission</span></a></td>
+            <td rowspan="4">Irlanda</td>
+            <td colspan="2"><a href="https://www.leinsteririshdance.ie/"><span lang="ga-IE">Comhairle Laighean</span> — <span lang="en-GB">Leinster Council</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="https://www.facebook.com/comhairlechonnacht"><span lang="ga-IE">Comhairle Chonnacht</span> — <span lang="en-GB">Connacht Council</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="https://munsterdancing.com/"><span lang="ga-IE">Comhairle Mumhan</span> — <span lang="en-GB">Munster Council</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://www.comhairleuladh.com/"><span lang="ga-IE">Comhairle Uladh</span> — <span lang="en-GB">Ulster Council</span></a></td>
+          </tr>
+          <tr>
+            <td rowspan="5">Reino Unido</td>
+            <td colspan="2"><a href="https://www.facebook.com/groups/1651319325075252"><span lang="en-GB">Scottish Regional Council</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="https://midlandsregionalcouncil.co.uk/"><span lang="en-GB">Midlands Regional Council</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="https://www.nwrc.co.uk/index.html"><span lang="en-GB">North West Regional Council</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="https://www.facebook.com/northeastregionalcouncil"><span lang="en-GB">North East Regional Council</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="https://www.sercweb.com/"><span lang="en-GB">Southern Regional Council</span></a></td>
+          </tr>
+          <tr>
+            <td rowspan="5">Estados Unidos y México</td>
+            <td rowspan="5"><a href="https://www.idtana.org/"><span lang="en-US">Irish Dance Teachers' Association of North America</span></a></td>
+            <td><a href="https://midamericaregion.com/"><span lang="en-US">Mid-America Region</span></a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.mid-atlanticregion.com/"><span lang="en-US">Mid-Atlantic Region</span></a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.neidt.org/"><span lang="en-US">New England Region</span></a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.idtana-southernregion.com/"><span lang="en-US">Southern Region</span></a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.westernusregion.com/"><span lang="en-US">Western Region</span></a></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Canadá</td>
+            <td colspan="2"><a href="https://www.idtac-er.com/"><span lang="en-CA">Eastern Region</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="https://www.wcidta.ca/"><span lang="en-CA">Western Region</span></a></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Australia y Nueva Zelanda</td>
+            <td colspan="2"><a href="https://www.irishdancing.org.au/"><span lang="en-GB">Australian Irish Dancing Association</span></a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="https://www.irishdance.co.nz/"><span lang="en-GB">Traditional Irish Dancing Association of New Zealand</span></a></td>
+          </tr>
+          <tr>
+            <td>Europa y Asia</td>
+            <td colspan="2"><a href="https://www.rcceairishdance.com/"><span lang="en-GB">Regional Council of Irish Dancing Teachers for Continental Europe and Asia</span></a></td>
+          </tr>
+          <tr>
+            <td>Sudáfrica</td>
+            <td colspan="2"><a href="https://www.facebook.com/IrishDanceSA"><span lang="en-GB">Irish Dance South Africa</span></a></td>
+          </tr>
+          <tr>
+            <td>Sudamérica</td>
+            <td colspan="2"><a href="https://www.irishdancesouthamerica.com/"><span lang="en-US">Irish Dance South America</span></a></td>
           </tr>
         </table>
       </div>
