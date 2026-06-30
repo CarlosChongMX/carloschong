@@ -203,6 +203,10 @@ caption
 {
   margin: 0 0 0.5em;
 }
+#tableCanalesDeTVAbierta > tr > td:firstChild
+{
+  overflow-wrap: break-word;
+}
 .fuenteMonoespaciada
 {
   font-family: "Consolas";
