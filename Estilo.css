@@ -167,6 +167,20 @@ a
   text-decoration-style: dotted;
   text-underline-position: under;
 }
+#aSubir
+{
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  padding: 1em;
+  background-color: #1c1c1c;
+  border: 1px solid #fabd00;
+  font-family: "Calibri";
+  font-size: 18px;
+  line-height: normal;
+  text-decoration-line: none;
+  text-underline-position: auto;
+}
 hr
 {
   width: 50%;
