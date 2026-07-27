@@ -2,55 +2,38 @@
 @font-face
 {
   font-family: "IM Fell English";
-  src: url(./IM_Fell_English_Regular.ttf);
+  src: url(IM_Fell_English.ttf);
   font-stretch: normal;
   font-style: normal;
   font-weight: normal;
-}
-@font-face
-{
-  font-family: "IM Fell English";
-  src: url(./IM_Fell_English_Bold.ttf);
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: bold;
-}
-@font-face
-{
-  font-family: "IM Fell English";
-  src: url(./IM_Fell_English_Italic.ttf);
-  font-stretch: normal;
-  font-style: italic;
-  font-weight: normal;
-}
-@font-face
-{
-  font-family: "IM Fell English";
-  src: url(./IM_Fell_English_Bold_Italic.ttf);
-  font-stretch: normal;
-  font-style: italic;
-  font-weight: bold;
 }
 body
 {
-  max-width: 768px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 1em 1em 2em;
+  padding: 1em 1em 4em;
   overflow-y: scroll;
   background-color: #ffffff;
   color: #000000;
 }
 *
 {
-  font: normal normal normal 32px/normal "IM Fell English";
+  box-sizing: border-box;
+  font: normal normal normal 16px/2 "IM Fell English";
+}
+a
+{
+  text-decoration-style: dotted;
+  text-underline-position: under;
 }
 .tabla
 {
+  padding-bottom: 1em;
   overflow-x: auto;
 }
 table
 {
-  margin: auto;
+  width: 100%;
   border-collapse: collapse;
 }
 table, th, td
@@ -59,6 +42,12 @@ table, th, td
 }
 th, td, caption
 {
+  padding: 0.5em;
+  line-height: 1.5;
   text-align: center;
   vertical-align: middle;
+}
+caption
+{
+  margin: 0 0 0.5em;
 }
