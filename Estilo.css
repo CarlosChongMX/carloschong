@@ -23,8 +23,25 @@ body
 }
 a
 {
+  text-decoration-line: underline;
   text-decoration-style: dotted;
-  text-underline-position: under;
+  text-underline-position: auto;
+}
+a:link
+{
+  color: #007fff;
+}
+a:visited
+{
+  color: #7f00ff;
+}
+a:hover
+{
+  color: #ff7f00;
+}
+a:active
+{
+  color: #ff0000;
 }
 .tabla
 {
