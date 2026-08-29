@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@font-face
-{
-  font-family: "IM Fell English";
-  src: url(IM_Fell_English.ttf);
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-}
 body
 {
   max-width: 1024px;
@@ -15,11 +7,13 @@ body
   overflow-y: scroll;
   background-color: #ffffff;
   color: #000000;
+  font-family: "Times New Roman", "Times", serif;
+  font-size: 16px;
+  line-height: 2;
 }
 *
 {
   box-sizing: border-box;
-  font: normal normal normal 16px/2 "IM Fell English";
 }
 a
 {
